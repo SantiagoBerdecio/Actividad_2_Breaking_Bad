@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="icon" type="icon.png" href="img/icon.png">
+    <title>Breaking Bad - Formulario</title>
+</head>
+<body class="main_body">
+    <div class="cuadros_formulario">
+    <h1 class="frase_formulario">Breaking Bad - Que comience el juego!</h1>
+    <form action="mailto:raul.rodriguez@proeducaglobal.com">
+        <fieldset  >
+            <label for="nombre">Nombre: </label>
+            <legend>Datos Personales</legend>
+            <input type="text" id="nombre" name="nombre" required>
+            <br>
+            <label for="apellidos">Apellidos: </label>
+            <input type="text" id="apellidos" name="apellidos" required>
+            <br>
+            <label for="direccion">Direccion: </label>
+            <input type="text" id="direccion" name="direccion">
+            <br>
+            <label for="dni">DNI: </label>
+            <input type="text" id="dni" name="dni">
+            <br>
+            <label for="email">Correo Electronico: </label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="sexo">Sexo:</label>
+            <br>
+            <label for="hombre">Hombre</label>
+            <input type="radio" id="hombre" name="hombre"> 
+            <br>
+            <label for="mujer">Mujer</label>
+            <input type="radio" id="mujer" name="mujer">
+            <br>
+            <label for="fecha_nacimiento">Fecha de nacimiento</label>
+            <input type="date" name="fecha_nacimiento" id="fecha_nacimiento"><br>
+        </fieldset>
+        <fieldset >
+            <label for="personajes">Lista de personajes:</label>
+            <select id="personajes">
+            <option value="Jessie Pinkman">Jessie Pinkman</option>
+            <option value="Walter White">Walter White</option>
+            <option value="Saul Goodman">Saul Goodman</option>
+            <option value="Gustavo Fring">Gustavo Fring</option>
+            <option value="Pollos Hermanos">Pollos Hermanos</option>
+            <option value="Otros personajes">Otros personajes</option>
+        </select>
+        </fieldset>
+        <fieldset >
+            <label for="comentarios">Comentarios :</label>
+            <textarea name="comentarios" id="comentarios"></textarea>
+        </fieldset>
+        <fieldset >
+        <input type="submit" value="Enviar">
+        <input type="file" value="Adjuntar">
+        <input type="reset" value="Borrar">
+        </fieldset>
+    </form>
+    </div>
+</body>
+</html>
